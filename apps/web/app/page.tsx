@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { EXAMS, MODULE_ORDER } from "@/lib/exams";
+import { DISEASES } from "@/lib/diseases/registry";
 
 export default function Home() {
   return (
@@ -11,20 +11,24 @@ export default function Home() {
       </div>
       <h1>TriageLens</h1>
       <p className="sub">
-        Live, feature-based triage screening. Each exam extracts real signals
-        from your camera, microphone and answers — and tells you when it
+        ML-based degenerative disease screening. Each module runs a trained
+        model on real acoustic or movement features — and tells you when it
         cannot assess something reliably.
       </p>
       <div className="grid">
-        {MODULE_ORDER.map((id) => {
-          const ex = EXAMS[id];
-          return (
-            <Link key={id} href={`/exam/${id}`} className="card link">
-              <h3>{ex.title}</h3>
-              <p>{ex.blurb}</p>
+        {DISEASES.map((d) =>
+          d.available ? (
+            <Link key={d.id} href={d.href} className="card link">
+              <h3>{d.title}</h3>
+              <p>{d.blurb}</p>
             </Link>
-          );
-        })}
+          ) : (
+            <div key={d.id} className="card disabled">
+              <h3>{d.title}</h3>
+              <p>{d.blurb}</p>
+            </div>
+          ),
+        )}
       </div>
     </main>
   );

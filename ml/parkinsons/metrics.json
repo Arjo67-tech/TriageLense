@@ -1,0 +1,20 @@
+{
+  "accuracy": 0.7209,
+  "macro_f1": 0.4189,
+  "roc_auc": 0.6102,
+  "n_train": 152,
+  "n_test": 43,
+  "n_subjects_train": 25,
+  "n_subjects_test": 7,
+  "feature_names": [
+    "MDVP:Fo(Hz)",
+    "MDVP:Fhi(Hz)",
+    "MDVP:Flo(Hz)",
+    "MDVP:Jitter(Abs)",
+    "MDVP:RAP",
+    "MDVP:PPQ",
+    "Jitter:DDP",
+    "NHR",
+    "HNR"
+  ]
+}

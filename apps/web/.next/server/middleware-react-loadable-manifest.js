@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST="{\"lib/diseases/parkinsons/analyze.ts -> onnxruntime-web\":{\"id\":\"lib/diseases/parkinsons/analyze.ts -> onnxruntime-web\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_onnxruntime-web_dist_ort_bundle_min_mjs.js\"]}}"

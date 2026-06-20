@@ -11,15 +11,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/history/page": [
+    "/diagnose/parkinsons/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/history/page.js"
-    ],
-    "/exam/[mode]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/exam/[mode]/page.js"
+      "static/chunks/app/diagnose/parkinsons/page.js"
     ]
   }
 }

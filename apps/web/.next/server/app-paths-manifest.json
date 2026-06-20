@@ -1,5 +1,3 @@
 {
-  "/page": "app/page.js",
-  "/exam/[mode]/page": "app/exam/[mode]/page.js",
-  "/history/page": "app/history/page.js"
+  "/diagnose/parkinsons/page": "app/diagnose/parkinsons/page.js"
 }

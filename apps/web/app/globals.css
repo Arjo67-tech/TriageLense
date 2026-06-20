@@ -54,6 +54,7 @@ h1 { font-size: 26px; margin: 0 0 4px; }
   transition: border-color .15s, transform .15s;
 }
 .card.link:hover { border-color: var(--accent); transform: translateY(-2px); }
+.card.disabled { opacity: .45; cursor: not-allowed; }
 .card h3 { margin: 0 0 6px; font-size: 17px; }
 .card p { margin: 0; color: var(--muted); font-size: 13.5px; line-height: 1.5; }
 
@@ -64,6 +65,20 @@ h1 { font-size: 26px; margin: 0 0 4px; }
   font-weight: 600; cursor: pointer;
 }
 .btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--accent); color: #fff; border: none;
+  padding: 10px 18px; border-radius: 10px; font-size: 14px;
+  font-weight: 600; cursor: pointer;
+}
+.btn-primary:disabled { opacity: .5; cursor: not-allowed; }
+.btn-ghost {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: transparent; color: var(--text); border: 1px solid var(--line);
+  padding: 10px 18px; border-radius: 10px; font-size: 14px;
+  font-weight: 600; cursor: pointer;
+}
+.btn-ghost:hover { border-color: var(--accent); }
 .btn.ghost { background: transparent; border: 1px solid var(--line); color: var(--text); }
 .btn.danger { background: var(--red); }
 
